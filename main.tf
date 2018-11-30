@@ -21,7 +21,8 @@ resource "null_resource" "organizational_units" {
 }
 
 data "external" "organizational_units" {
-  program = ["bash", "${path.module}/scripts/get_ous.sh"]
+  depends_on = ["null_resource.organizational_units"]
+  program    = ["bash", "${path.module}/scripts/get_ous.sh"]
 
   query = {
     aws_profile = "${var.aws_profile}"
