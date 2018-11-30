@@ -3,5 +3,5 @@
 
 output "organizational_units" {
   description = "Organizational units"
-  value       = "${data.external.organizational_units.result}"
+  value       = "${module.example.organizational_units}"
 }

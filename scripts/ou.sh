@@ -38,6 +38,20 @@ for ou in ${ou_list}; do
   fi
 done
 
+ou_exists_list=$(aws organizations list-organizational-units-for-parent --parent-id ${root_id} --profile ${aws_profile} | jq -r '.OrganizationalUnits[] | [.Name, .Id] | join(":")')
+declare -A ou_lookup
+for ou in ${ou_exists_list}; do
+  ou_lookup["${ou%%:*}"]="${ou##*:}"
+done
+
 # OUs: core, environments
 # What data should be outputted?
-jq -n --arg aws_profile "$aws_profile" '{"aws_profile":$aws_profile}'
+#   all OU names and IDs
+#   format?
+#   Other things will need to be able lookup OU ID
+#   2 ordered lists ${!ou_lookup[@]} ${ou_lookup[@]}
+
+echo "{\
+ \"ou_names\":$(echo -n "${!ou_lookup[@]}" | jq -cRs 'split(" ")'),\
+ \"ou_ids\":$(echo -n "${ou_lookup[@]}" | jq -cRs 'split(" ")') \
+}"

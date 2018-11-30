@@ -31,6 +31,12 @@ module "organizational-units" {
 | aws\_region | AWS region | string | `us-east-1` | no |
 | ou\_list | List of organizational unit to manage. These will be top level under root | string | - | yes |
 
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| organizational\_units | Organizational units |
+
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM GRAPH HOOK -->
 
