@@ -5,7 +5,7 @@
 
 Terraform module to create organizational units in an AWS master account.
 
-This is assumed to be a tempory implementation until OU support is added to Terraform
+This is assumed to be a temporary implementation until OU support is added to Terraform
 
 [Terraform registry](https://registry.terraform.io/modules/devops-workflow/organizational-units/aws)
 
