@@ -1,19 +1,17 @@
-terraform-aws-organizational-units: basic
-======================================
+# terraform-aws-organizational-units: basic
 
 Configuration in this directory sets up some organizational units
 
-Usage
-=====
+## Usage
 
 Create a terraform.tfvars file with your settings
 
 Then to run this example you need to execute:
 
 ```bash
-$ terraform init
-$ terraform plan
-$ terraform apply
+terraform init
+terraform plan
+terraform apply
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
