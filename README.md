@@ -14,7 +14,7 @@ This is assumed to be a temporary implementation until OU support is added to Te
 ### Basic Example
 
 ```hcl
-module "" {
+module "organizational-units" {
   source        = "devops-workflow/organizational-units/aws"
   version       = "0.0.1"
   aws_profile   = "master"
