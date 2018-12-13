@@ -34,7 +34,7 @@ module "organizational-units" {
 
 | Name | Description |
 |------|-------------|
-| organizational\_units | Organizational units |
+| ids | Root and Organizational units IDs |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM GRAPH HOOK -->

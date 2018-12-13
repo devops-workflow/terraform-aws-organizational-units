@@ -1,7 +1,7 @@
 # External has results but no idea about plan/apply
 # Null understands plan/apply but has no output
 
-output "organizational_units" {
-  description = "Organizational units"
+output "ids" {
+  description = "Root and Organizational units IDs"
   value       = "${data.external.organizational_units.result}"
 }

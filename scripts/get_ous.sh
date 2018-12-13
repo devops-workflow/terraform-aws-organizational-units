@@ -26,6 +26,7 @@ done
 #}"
 
 json="{"
+json="${json} \"root\":\"${root_id}\","
 for ou in "${!ou_lookup[@]}"; do
   json="${json} \"${ou}\":\"${ou_lookup[${ou}]}\","
 done
