@@ -28,7 +28,6 @@ module "organizational-units" {
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
 | aws\_profile | AWS profile in local credentials file that has rights to master account | string | - | yes |
-| aws\_region | AWS region | string | `us-east-1` | no |
 | ou\_list | List of organizational unit to manage. These will be top level under root | string | - | yes |
 
 ## Outputs
