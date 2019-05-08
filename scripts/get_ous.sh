@@ -1,4 +1,4 @@
-#!/usr/local/bin/bash
+#!/usr/bin/env bash
 # #!/bin/bash
 #
 # This script is expected to be from Terraform via external provider
